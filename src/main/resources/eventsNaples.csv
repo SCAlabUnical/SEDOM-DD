@@ -1,0 +1,3 @@
+EVENT;LEVEL;ENTITY;TYPE;DESCRIPTION
+@event1;POI;@poi1;CROLLO;crollata una casa,caduta una casa,ha ceduto una casa,pare sia crollata una casa,Mi dicono che è crollata una casa,Degli amici mi hanno detto che è caduta una casa,Poco fa è venuta giù una casa
+@event2;POI;@poi2;CROLLO;Mi dicono che è crollata una parte del comune,Pare sia venuta giù una parte del comune,Mi dicono che è crollata la facciata dell'ufficio comunale,stata gravemente danneggiato l'ufficio comunale,L'ufficio comunale ha riportato seri danni,L'ufficio del comune non ha retto,L'edificio del comune è stato danneggiato

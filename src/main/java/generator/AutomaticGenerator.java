@@ -192,16 +192,16 @@ public class AutomaticGenerator {
                 .collect(Collectors.toList());
         storeInFile(pointsDBSCANCoordinatesKML, "dbscanDB.kml");
 
-        System.out.println("\n*** DATI KML ***");
-        System.out.println("Tweet complessivi: " + generatedTweets.size());
-        System.out.println("Rilevanti: " + tweetsRelevantKML.size());
-        System.out.println("\t->Generici: " + tweetsGenericKML.size());
-        System.out.println("\t->Sottoeventi: " + tweetsSubEventRelevantKML.size());
+        System.out.println("\n*** KML DATA ***");
+        System.out.println("Tweet [total]: " + generatedTweets.size());
+        System.out.println("Relevant: " + tweetsRelevantKML.size());
+        System.out.println("\t->Generic: " + tweetsGenericKML.size());
+        System.out.println("\t->SubEvents: " + tweetsSubEventRelevantKML.size());
 
         System.out.println("\t\t->Geolocalized: " + dbscanGeoPrecise);
         System.out.println("\t\t->Estimated: " + dbscanGeoEstimated);
 
-        System.out.println("Non Rilevanti: " + tweetsNotRelevantKML.size());
+        System.out.println("Not Relevant: " + tweetsNotRelevantKML.size());
         System.out.println("DBSCAN Points: " + pointsDBSCANCoordinatesKML.size());
 
         if (Boolean.parseBoolean(generatorProperties.getString("launchDBSCAN"))) {
@@ -210,7 +210,7 @@ public class AutomaticGenerator {
 
             if (DBSCAN_MIN_PTS > minNumRelevantTweetsGeneratedPerEvent) {
                 DBSCAN_MIN_PTS = minNumRelevantTweetsGeneratedPerEvent / 2;
-                System.err.println("Il valore di MinPts è troppo basso! Valore impostato a: " + DBSCAN_MIN_PTS);
+                System.err.println("The MinPts value is too low! It is set to: " + DBSCAN_MIN_PTS);
             }
 
             System.out.println("\n*** STARTING DBSCAN ***");
